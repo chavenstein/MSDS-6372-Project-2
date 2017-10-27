@@ -59,7 +59,7 @@ Please note, while the main analysis of the data will be in SAS, we wanted to ma
 
     + The analysis in **"Analysis.Rmd"** sources **"Makefile.R"**, which in turn sources, in order: **"Gather1.R"**, **"Gather2.R"**, **"Gather3.R"**, **"Clean1.R"**, **"Clean2.R"**, **"Clean3.R"**, **"MergeData1.R"**, and then last, **"MergeData2.R".**
     
-    + **Please navigate to the ./CaseStudy1/Analysis/ folder to view the analysis. Or, use this [link](https://github.com/chavenstein/MSDS-6372-Project-2/blob/master/MSDS-6372-Project-2/Analysis/Analysis.md).** 
+    + **Please navigate to the ./CaseStudy1/Analysis/ folder to view the analysis. Or, use this [link](https://github.com/chavenstein/MSDS-6372-Project-2/blob/master/Analysis/Analysis.md).** 
     + If you are viewing the analysis in GitHub, please specifically navigate to the file **"Analysis.md"** in the ~/MSDS-6372-Project-2/Analysis/ folder. **This will allow you to view the summary output R code snippets in GitHub.**
 
 
