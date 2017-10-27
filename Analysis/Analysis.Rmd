@@ -1,0 +1,70 @@
+---
+title: "Analysis.Rmd"
+author: "Sarah Fite, Chris Havenstein"
+date: "October 27, 2017"
+output: github_document
+---
+
+# Analysis 
+
+#### To begin the analysis, please set your working directory to the Analysis folder.
+
+
+Depending on the directory you cloned the "MSDS 6372 - Project 2" into, the path to the "Analysis" folder should be similar to:
+
+* ./root/MSDS 6372 - Project 2/Analysis
+
+By modifying "Analysis.Rmd" in the Analysis folder, I set an absolute path to the Analysis folder on my computer.
+
+
+```{r setwd}
+setwd("C:\\Users\\Chris\\Desktop\\GIT home\\MSDS 6372 - Project 2\\Analysis")
+```
+
+
+Then, source Makefile.R
+
+```{r makefile}
+source("./Data/Makefile.R")
+
+```
+At this point, Makefile.R has completed running and has loaded the merged data for analysis.
+
+
+Summary data:
+```{r summary}
+## The output will be:
+## 1. "MergeData1.csv" -- merged  "CleanSpotPrices.csv" and "CleanOilGasRigsSplit.csv"
+## 2. "MergeData2.csv" -- merged  "CleanSpotPrices.csv" and "CleanRigCountByTrajectory.csv"
+
+## MergeData1 is MergeData1.csv
+## MergeData2 is MergeData2.csv
+
+
+#summary information of on MergeData1
+print("MergeData1 includes Spot Prices and Oil and Gas Rig Split")
+summary(MergeData1)
+
+#summary information of MergeData2
+print("MergeData2 includes Spot Prices and Rig Counts by Different Trajectories")
+summary(MergeData2)
+```
+
+
+First 6 rows:
+```{r head}
+## The output will be:
+## 1. "MergeData1.csv" -- merged  "CleanSpotPrices.csv" and "CleanOilGasRigsSplit.csv"
+## 2. "MergeData2.csv" -- merged  "CleanSpotPrices.csv" and "CleanRigCountByTrajectory.csv"
+
+## MergeData1 is MergeData1.csv
+## MergeData2 is MergeData2.csv
+
+
+#summary information of 1st six rows of on MergeData1
+head(MergeData1)
+
+#summary information 1st six rows of MergeData2
+head(MergeData2)
+
+```
